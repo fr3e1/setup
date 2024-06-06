@@ -1,0 +1,2 @@
+floorp-bi
+librewolf-bin
