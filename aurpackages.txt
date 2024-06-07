@@ -1,2 +1,3 @@
-floorp-bi
+floorp-bin
 librewolf-bin
+processing-bin

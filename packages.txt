@@ -1,4 +1,5 @@
 alacritty
+htop
 btop
 zsh
 rofi

@@ -1,3 +1,6 @@
+sudo -v
+
+
 mkdir temp
 declare -a packages
 declare -a aurpackages
@@ -15,22 +18,24 @@ yay -Syu --noconfirm "${aur[@]}"
 }
 
 yaysetup() {
-
+sudo -v
+{
 git clone https://aur.archlinux.org/yay.git
 mv yay/ temp/yay
-cd temp/yay | makepkg -si && yes 
+cd temp/yay && makepkg -si --noconfirm
 cd
 }
-
-dotfiles() {
-
-
 }
 
+#dotfiles() {
 
 
-#yaysetup
-packageinstall
+#}
+
+
+
+yaysetup
+#packageinstall
 #rm -rfv temp
 #echo
-#echo "done!"
+echo "done!"
