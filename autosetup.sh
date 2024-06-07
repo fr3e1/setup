@@ -27,14 +27,15 @@ cd
 }
 }
 
-#dotfiles() {
- ~/.config/alacritty 
- ~/.config/fastfetch
- ~/.config/i3
- ~/.config/neofetch
- ~/.config/nitrogen
- ~/.config/polybar
-#}
+dotfiles() {
+mkdir /dotfilebackup
+mv ~/.config/alacritty 
+mv ~/.config/fastfetch
+mv ~/.config/i3
+mv ~/.config/neofetch
+mv ~/.config/nitrogen
+mv ~/.config/polybar
+}
 
 
 
