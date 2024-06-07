@@ -28,8 +28,12 @@ cd
 }
 
 #dotfiles() {
-
-
+ ~/.config/alacritty 
+ ~/.config/fastfetch
+ ~/.config/i3
+ ~/.config/neofetch
+ ~/.config/nitrogen
+ ~/.config/polybar
 #}
 
 
