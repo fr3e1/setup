@@ -1,11 +1,10 @@
+#/bin/bash
+
 sudo -v
 
 
 mkdir temp
-declare -a packages
-declare -a aurpackages
-packages=($(cat packages.txt))
-aur=($(cat aurpackages.txt))
+
 
 
 
@@ -29,18 +28,17 @@ cd
 
 dotfiles() {
 mkdir /dotfilebackup
-mv ~/.config/alacritty 
-mv ~/.config/fastfetch
-mv ~/.config/i3
-mv ~/.config/neofetch
-mv ~/.config/nitrogen
-mv ~/.config/polybar
+mv ~/.config/alacritty /dotfilebackup
+mv ~/.config/fastfetch /dotfilebackup
+mv ~/.config/i3 /dotfilebackup
+mv ~/.config/neofetch /dotfilebackup
+mv ~/.config/nitrogen /dotfilebackup
+mv ~/.config/polybar /dotfilebackup
 }
 
 
 
 yaysetup
-#packageinstall
-#rm -rfv temp
-#echo
+packageinstall & rm -rfv temp
+wecho
 echo "done!"
