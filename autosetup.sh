@@ -15,7 +15,7 @@ yay -Syu --noconfirm "${aur[@]}"
 
 
 }
-
+dotfiles
 yaysetup() {
 sudo -v
 {
@@ -34,6 +34,8 @@ mv ~/.config/i3 /dotfilebackup
 mv ~/.config/neofetch /dotfilebackup
 mv ~/.config/nitrogen /dotfilebackup
 mv ~/.config/polybar /dotfilebackup
+mv ~/.zshrc /dotfilebackup
+
 }
 
 
